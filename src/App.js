@@ -7,6 +7,7 @@ import FacultyDashboard from './pages/FacultyDashboard';
 import StudentDashboard from './pages/StudentDashboard';
 import TransportDashboard from './pages/TransportDashboard';
 import Login from './pages/Login';
+import Signup from './pages/Signup';
 import './App.css';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <Navbar />
           <Routes>
             <Route path="/" element={<Login />} />
+            <Route path="/signup" element={<Signup />} />
             <Route path="/admin" element={<AdminDashboard />} />
             <Route path="/faculty" element={<FacultyDashboard />} />
             <Route path="/student" element={<StudentDashboard />} />
